@@ -1,18 +1,15 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StatusBar} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import StackNavigator from './src/navigation/Stack';
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>APP</Text>
-    </View>
+    <NavigationContainer>
+      <StatusBar backgroundColor="#327fa8" barStyle="dark-content" />
+      <StackNavigator />
+    </NavigationContainer>
   );
 };
 
 export default App;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
