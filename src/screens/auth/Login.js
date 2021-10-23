@@ -18,6 +18,19 @@ const Login = () => {
       <TouchableOpacity onPress={() => navigation.navigate('Post')}>
         <Text>Post</Text>
         <Text>This is login</Text>
+        <Text
+          style={{
+            fontFamily: 'Lato-Bold',
+            fontSize: 22,
+          }}>
+          Lato
+        </Text>
+        <Text
+          style={{
+            fontSize: 22,
+          }}>
+          Lato
+        </Text>
       </TouchableOpacity>
     </View>
   );
