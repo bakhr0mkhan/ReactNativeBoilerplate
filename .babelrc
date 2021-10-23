@@ -15,7 +15,8 @@
           "@screens": "./src/screens",
           "@assets": "./src/assets",
           "@navigation": "./src/navigation",
-          "@store": "./src/store"
+          "@store": "./src/store",
+          "@config": "./src/config"
         }
       }
     ]
