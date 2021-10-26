@@ -3,6 +3,9 @@ import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import {useNavigation} from '@react-navigation/core';
 import {useDispatch} from 'react-redux';
 import * as types from '@store/types';
+import LottieView from 'lottie-react-native';
+
+import loadingAnim from '@assets/animations/loading.json';
 
 const Login = () => {
   // hooks
@@ -17,7 +20,7 @@ const Login = () => {
     <View>
       <TouchableOpacity onPress={() => navigation.navigate('Post')}>
         <Text>Post</Text>
-        <Text>This is login</Text>
+        <Text>This is login page</Text>
         <Text
           style={{
             fontFamily: 'Lato-Bold',
@@ -31,6 +34,7 @@ const Login = () => {
           }}>
           Lato
         </Text>
+        <LottieView source={loadingAnim} autoPlay loop />
       </TouchableOpacity>
     </View>
   );
