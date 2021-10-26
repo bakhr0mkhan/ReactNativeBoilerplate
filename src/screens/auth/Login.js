@@ -7,9 +7,9 @@ import LottieView from 'lottie-react-native';
 
 import loadingAnim from '@assets/animations/loading.json';
 
-const Login = () => {
+const Login = ({navigation}) => {
   // hooks
-  const navigation = useNavigation();
+  // const navigation = useNavigation();
   const dispatch = useDispatch();
 
   // effects
@@ -18,7 +18,7 @@ const Login = () => {
   });
   return (
     <View>
-      <TouchableOpacity onPress={() => navigation.navigate('Post')}>
+      <TouchableOpacity onPress={() => navigation.openDrawer()}>
         <Text>Post</Text>
         <Text>This is login page</Text>
         <Text
