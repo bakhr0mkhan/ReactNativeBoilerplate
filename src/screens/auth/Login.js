@@ -1,15 +1,12 @@
 import React, {useEffect} from 'react';
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
-import {useNavigation} from '@react-navigation/core';
 import {useDispatch} from 'react-redux';
 import * as types from '@store/types';
 import LottieView from 'lottie-react-native';
-
 import loadingAnim from '@assets/animations/loading.json';
 
 const Login = ({navigation}) => {
   // hooks
-  // const navigation = useNavigation();
   const dispatch = useDispatch();
 
   // effects
@@ -25,6 +22,7 @@ const Login = ({navigation}) => {
           style={{
             fontFamily: 'Lato-Bold',
             fontSize: 22,
+            color: 'black',
           }}>
           Lato
         </Text>
