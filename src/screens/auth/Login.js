@@ -1,39 +1,10 @@
-import React, {useEffect} from 'react';
-import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
-import {useDispatch} from 'react-redux';
-import * as types from '@store/types';
-import LottieView from 'lottie-react-native';
-import loadingAnim from '@assets/animations/loading.json';
+import React from 'react';
+import {StyleSheet, Text, View} from 'react-native';
 
-const Login = ({navigation}) => {
-  // hooks
-  const dispatch = useDispatch();
-
-  // effects
-  useEffect(() => {
-    dispatch({type: types.FETCH_POSTS_REQUEST});
-  });
+const Login = () => {
   return (
     <View>
-      <TouchableOpacity onPress={() => navigation.openDrawer()}>
-        <Text>Post</Text>
-        <Text>This is login page</Text>
-        <Text
-          style={{
-            fontFamily: 'Lato-Bold',
-            fontSize: 22,
-            color: 'black',
-          }}>
-          Lato
-        </Text>
-        <Text
-          style={{
-            fontSize: 22,
-          }}>
-          Lato
-        </Text>
-        <LottieView source={loadingAnim} autoPlay loop />
-      </TouchableOpacity>
+      <Text>Login</Text>
     </View>
   );
 };

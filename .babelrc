@@ -17,7 +17,8 @@
           "@navigation": "./src/navigation",
           "@store": "./src/store",
           "@services": "./src/store/services",
-          "@config": "./src/config"
+          "@config": "./src/config",
+          "@utils": "./src/utils"
         }
       }
     ]
